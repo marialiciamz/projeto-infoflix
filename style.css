@@ -1,0 +1,56 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #4C00F5, black );
+}
+#menu{
+    position: fixed;
+   background-image: linear-gradient(to bottom, black, transparent);
+    text-align: right;
+    width: 99vw;
+    height: 25px;
+    margin: 0px;
+    padding: 10x;
+    
+    
+}
+nav{
+    float: left;
+    text-align: left;
+}
+#menu a{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+#menu a:hover{
+    text-decoration: underline;
+}
+#usuario{
+    display: none;
+}
+#principal{
+ width: 99vw;
+ height: 50vh;
+background-image: url("imagens/dexter-.jpg");
+}
+
+#play{
+    background-color: white;
+    color: black;
+    width: 60px;
+    border-radius: 8px;
+    padding: 7px;
+    height: 20px;
+   
+}
+#play>a{
+    text-decoration: none;
+}
