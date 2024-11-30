@@ -40,6 +40,8 @@ nav{
  width: 99vw;
  height: 50vh;
 background-image: url("imagens/dexter-.jpg");
+background-size: cover;
+background-position: center center;
 }
 
 #play{

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+   background-image: linear-gradient(to bottom, #6c29fb, black); 
+   height: 100vh;
+    
+}
+section{
+    position: absolute;
+    margin: auto;
+    width: 445px;
+    height: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input{
+    display: block;
+    height: 20px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#iEnviar{
+    background-color: #4C00F5;
+    color: white;
+    width: 420px;
+    height: 30px;
+    margin-top: 25px;
+    padding: 20px;
+
+}
