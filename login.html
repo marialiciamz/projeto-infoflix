@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/estiloLogin.css">
+    <script src="js.js"></script>
 </head>
 <body>
         <section>
             <h1>Entrar</h1>
-            <input type="text" id="iNome" name="nome" placeholder="Email ou número de telefone" size="30" autocomplete="email" required>
-            <input type="text" id="iSenha" name="senha" placeholder="Senha" minlength="8" autocomplete="password" required>
-            <a href="index.html"><input type="submit" value="Entrar" id="iEnviar"></a>
-        </section>
+            <form action="index.html" method="post"  autocomplete="on" onsubmit=" return loginSite()" id="form">
+                <div>
+                    <input type="email" id="iNome" name="nome" placeholder="Email" maxlength="30" autocomplete="email" onfocus="mudarCor2()" required></div>
+
+                <div>
+                    <input type="password" id="iSenha" name="senha" placeholder="Senha" minlength="8" maxlength="20" autocomplete="current-password" onfocus="mudarCor2()" required>
+
+                    <p id="alerta">senha ou email incorreto</p>
+                </div>
+
+                <div>
+                    <input type="submit" value="Entrar" id="iEntrar" onclick="mudarCor1()">
+                </div>
+
+            </form>
     
+        </section>
+
 </body>
 </html>

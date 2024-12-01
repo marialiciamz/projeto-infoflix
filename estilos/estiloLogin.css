@@ -9,7 +9,7 @@ section{
     position: absolute;
     margin: auto;
     width: 445px;
-    height: 400px;
+    height: 300px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
@@ -20,21 +20,36 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+div{
+    margin: 12px 10px;
+}
 input{
-    display: block;
+   
     height: 20px;
     width: 400px;
-    margin: 10px;
     padding: 10px;
     font-size: 15px;
     border-radius: 5px;
+    border: 0px;
+
 }
-#iEnviar{
+input:focus{
+    outline:none ;
+}
+#iEntrar{
     background-color: #4C00F5;
     color: white;
     width: 420px;
-    height: 30px;
-    margin-top: 25px;
-    padding: 20px;
-
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    padding-block: 0px;
+}
+#alerta{
+    display: none;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
