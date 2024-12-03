@@ -1,5 +1,9 @@
 function mudarUsuario(){
-   
+   if(conta.img == "indexUsuario1.html"){
+    conta.img = "indexUsuario2.html";
+   }else if(conta.img == "indexUsuario2.html"){
+    conta.img = "indexUsuario1.html";
+   }
 }
 function mudarCor1(){
     iEntrar.style.backgroundColor = "#300098";
@@ -17,6 +21,7 @@ function loginSite(){
         return false;
     }
  }
+
 
  
  

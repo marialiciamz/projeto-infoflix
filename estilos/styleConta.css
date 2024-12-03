@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div{
+    display: inline;
+}
+div#contem{
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+h1{
+    margin: 15px 0px;
+}
+img {
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+img:hover{
+    outline: 2px solid white;
+}
+p{
+    font-size: 18px;
+}

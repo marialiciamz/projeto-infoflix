@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body{
-   background-image: linear-gradient(to bottom, #6c29fb, black); 
-   height: 100vh;
-    
-}
 section{
     position: absolute;
     margin: auto;
@@ -22,6 +17,10 @@ section{
 }
 div{
     margin: 12px 10px;
+}
+h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 input{
    
