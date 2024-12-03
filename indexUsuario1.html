@@ -9,37 +9,52 @@
    <script src="js.js"></script>
 </head>
 <body>
-    <section id="inicio">
-        <a name="inicio"></a>
+   
         <aside id="menu">
             <nav>
                 <a href="#inicio">Início</a>
                 <a href="#series">Séries</a>
                 <a href="#filmes">Filmes</a>
             </nav>
-            <section id="conta">
-                 <a href=""><img src="imagens/chopper-400.webp" alt="Maria Alícia"></a>
-                <aside id="usuario">
-                    <p>
-                        <img src="imagens/chopper-400.webp" alt="">
-                        <a href="indexUsuario1.html" id="usuUm" onclick="mudarUsuario()">Maria Alícia</a>
-                    </p>
-
-                    <p>
-                        <img src="imagens/pikachu-400.png" alt="">
-                        <a href="indexUsuario2.html" id="usuDois" onclick="mudarUsuario()">Luís </a>
-                    </p>
-                </aside>
-
-                
-
-            </section>
-        </aside>
-        <aside id="introducao">
             
+            <div id="conta" >
+                
+                <div id="pesquisa">
+                    <button>p</button>
+                    <input type="text" name="busca" id="busca" placeholder="Título">
+                </div>
+                
+                    <img id="fotoPerfil" src="imagens/chopper-400.webp" alt="Maria Alícia" >
+                
+            </div>
+                <aside id="usuario">
+                   
+                        <ul>
+                            <li>
+                                <img src="imagens/chopper-400.webp" alt="">
+                                <a href="indexUsuario1.html" id="usuUm" >Maria Alícia</a>
+                            </li>
+                            <li>
+                                <img src="imagens/pikachu-400.png" alt="">
+                                <a href="#" id="usuDois" >Luís Antônio </a>
+                            </li>
+                        </ul>
+                        
+                        <hr>
+                        <a href="login.html">Sair</a>
+                    </aside>
+                    
+                    
+
         </aside>
-        <img src="imagens/dexter-.jpg" alt="">
-    </section>
+        <section id="inicio">
+            <a name="inicio"></a>
+            <aside id="introducao">
+                
+            </aside>
+            <img src="imagens/dexter-.jpg" alt="">
+        </section>
+    
 
     <section id="series">
         <a name="series"></a>

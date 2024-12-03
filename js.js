@@ -5,6 +5,13 @@ function mudarUsuario(){
     conta.img = "indexUsuario1.html";
    }
 }
+function telaUsuario(){
+    if(usuario.style.display == "none"){
+        usuario.style.display = "block"
+    }else if(usuario.style.display = "block"){
+        usuario.style.display = "none"
+    }
+}
 function mudarCor1(){
     iEntrar.style.backgroundColor = "#300098";
 }
