@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-
 #menu{
     position: fixed;
-    top: 0vh;
+    top: 0px;
    background-image: linear-gradient(to bottom, black, transparent);
     text-align: right;
     width: 99vw;
@@ -27,17 +26,19 @@ nav{
     
 }
 #menu a:hover{
+    text-decoration: underline;
+}
+#menu nav a:hover{
+    text-decoration: none;
     color: rgb(163, 162, 162);
 }
-#menu a:active{
-    font-weight: 600;
-    color: white;
-}
+
 #pesquisa{
    float: left;
    background-color: black;
    margin-right: 20px;
-   padding: 5px;
+   padding: 0px 5px;
+   margin-top: 3px;
    outline: 2px solid white;
    
 }
@@ -72,6 +73,7 @@ input:focus{
     float: right;
 }
 #usuario{
+
     position: absolute;
     clear: none;
     background-color: rgba(0, 0, 0, 0.785);
@@ -91,16 +93,19 @@ input:focus{
     padding: 0px;
 }
 #usuario img{
-
+    
     width: 40px;
     height: 40px;
-   padding: 5px;
-   
+    padding: 5px;
+    
+}
+#usuario li{
+    display: flex;
+    align-items: center;
+    
 }
 #usuario li>a{
-    
-    padding-top: 0px;
-    padding-bottom: 0px;
+   padding: 5px 3px;
 }
 
 #series, #filmes{
@@ -132,4 +137,21 @@ h1, h2{
 }
 #play>a{
     text-decoration: none;
+}
+.catalogo{
+    display: flex;
+    overflow-x: scroll;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.catalogo::-webkit-scrollbar-thumb{
+  background-color: rebeccapurple;
+    
+}
+
+.item{
+    margin-right: 15px;
 }

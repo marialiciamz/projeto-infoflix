@@ -28,6 +28,10 @@ function loginSite(){
         return false;
     }
  }
+ function aparecer(){
+    if()
+ }
+
 
 
  

@@ -1,18 +1,26 @@
 @charset "UTF-8";
 
-
-div#contem{
-    display: block;
-    position: absolute;
+body{
+    display: flex;
     text-align: center;
     color: white;
+}
+#contem{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     border-radius: 10px;
     top: 50%;
     left: 50%;
 
     transform: translate(-50%,-50%);
 }
+#itens{
+    display: flex;
+    flex-direction: row;
+}
 h1{
+    font-size: 30px;
     margin: 15px 0px;
 }
 img {
