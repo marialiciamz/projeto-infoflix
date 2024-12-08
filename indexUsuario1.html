@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
@@ -10,7 +10,18 @@
     
 </head>
 <body>
-    <menu>
+    <section id="Iinicio">
+        <a name="inicio"></a>
+       <aside>
+        <h1>Dexter</h1>
+        <div >
+            <a href="#" id="play">Assistir</a>
+            <a href="#" id="info">Mais informações</a>
+        </div>
+       </aside>
+    </section>
+    
+    <menu class="corPadrao" class="modoEscuro">
         <nav>
             <a href="#inicio">Início</a>
             <a href="#series">Séries</a>
@@ -20,7 +31,7 @@
         <div id="conta" >
     
             <form id="pesquisa">
-                <button>p</button>
+                <button id="botao">p</button>
                 <input type="text" name="busca" id="busca" placeholder="Título">
             </form>
     
@@ -42,13 +53,6 @@
     
     
     </menu>
-    <section id="Iinicio">
-        <a name="inicio"></a>
-       <aside>
-        <h1>Dexter</h1>
-        <div id="play"><a href="#" >Assistir</a></div>
-       </aside>
-    </section>
     
     
     <main>
@@ -88,7 +92,10 @@
                 <a name="filmes"></a>
                 <h1>Filmes</h1>
                 <section class="catalogo">
-            <img src="imagens/As-Branquelas-300.jpg" alt="">
+            <div class="item">
+                <img src="imagens/As-Branquelas-300.jpg" alt="as branquelas">
+                <p>As Branquelas</p>
+            </div>
                 </section>
         </main>
     

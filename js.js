@@ -28,7 +28,21 @@ function loginSite(){
         return false;
     }
  }
- 
+
+
+window.addEventListener('scroll', function(){
+    var elementoComMudanca = this.document.querySelector('menu');
+    var scrollPosition = this.window.scrollY;
+
+    if(scrollPosition>0){
+        elementoComMudanca.classList.add('modoEscuro');
+        elementoComMudanca.classList.remove('corPadrao')
+    }else{
+        elementoComMudanca.classList.add('corPadrao');
+        elementoComMudanca.classList.remove('modoEscuro')
+    }
+});
+
 
 
 
