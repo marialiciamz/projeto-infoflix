@@ -135,6 +135,7 @@ menu nav a:hover{
    margin-top: 2px;
    padding: 0px;
    outline: 2px solid white;
+   border-radius: 10px;
    
 }
 #pesquisa button{
@@ -156,7 +157,7 @@ input:focus{
     outline: none;
 }
 
-#conta img{
+#elementosDireira img{
 
     width: 40px;
     height: 40px;
@@ -165,31 +166,39 @@ input:focus{
     border-radius: 10px;
 
 }
+
 #elementosDireira{
     display: flex;
+    float: right;
     height: 53px;
+    margin-right: 2%;
 
 }
 #conta{
-    float: right;
-    margin-right: 2%;
+  position: relative;
+
+}
+#conta:hover #usuario{
+    height: 90px;
 }
 #usuario{
     
-    
-    float: right;
     background-color: rgba(0, 0, 0, 0.785);
     text-align: left;
     width: 200px;
-    padding: 5px 0px;
+    height: 0px;
+    overflow: hidden;
     margin-top: 8px;
-    margin-right: 10px;
     
 }
- ul{
+ #elementosDireira ul li div{
+    display: block;
+}
+#elementosDireira ul{
     list-style: none;
     margin: 0px;
     padding: 0px;
+
 }
 #usuario img{
     
@@ -198,7 +207,7 @@ input:focus{
     padding: 5px;
     
 }
-#usuario li{
+#usuario div{
     display: flex;
     align-items: center;
     
