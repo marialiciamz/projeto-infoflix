@@ -3,111 +3,67 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
+    <title>Infoflix</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="estilos/Estilo.Filmes.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css" />
+   
     
     <script src="js.js"></script>
     
     
 </head>
-<body >
+<body >  
     <section id="Iinicio">
         <a name="inicio"></a>
        <aside>
-        <h1>As Branquelas</h1>
+        <h1>John Wick 4</h1>
         <div >
-            <a href="#" id="play">
+            <a href="https://youtu.be/J6mNLrZVJoU?feature=shared" target="_blank" id="play">
                   Assistir</a>
             <a href="#" id="info">
                     Mais informações</a>
         </div>
        </aside>
     </section>
-    
-    <menu class="corPadrao" class="modoEscuro">
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#series">Séries</a>
-            <a href="#filmes">Filmes</a>
+
+    <menu class="corPadram" class="modoEscuro">
+        <div class="logo-container">
+          <h1 class="logo">INFO<span>FLIX</span></h1>
+          <a href="#" class="profile-link">
+            <img src="image/logo.jpeg" alt="Profile" class="profile-img" />
+          </a>
+          <nav>
+            <a href="indexUsuario1.html">Início</a>
+            <a href="Series.html">Séries</a>
+            <a href="Filmes.html">Filmes</a>
         </nav>
-    
-        <form id="pesquisa">
-            <button id="botao"><span class="material-symbols-outlined">
-                search
-                </span></button>
-            <input type="text" name="busca" id="busca" placeholder="Título">
-        </form>
-       
-        
-        <div id="elementosDireira">
-            <ul>
-                <li id="conta">
-                    <img  src="imagens/chopper-400.webp" alt="Usuario" id="fotoP">
-                    
-                            <div id="usuario" >
-                                <div>
-                                    <img src="imagens/pikachu-400.png" alt="Usuario">
-                                    <a href="#">Luís Antônio </a>
-                                </div>
-                                <hr>
-                                <a href="login.html">Sair</a>
-                    
-                            </div>
-                </li>
-            </ul>
-                    
-                </div>
-                    
-            
-    
-    
-    </menu>
-    
-    
-    <main>
-        <a name="series"></a>
-            <h1>Séries</h1>
-                <section class="catalogo">
-                <div class="item">
-                    <img src="imagens/dexter-300.jpg" alt="Dexter">
-                <p>Dexter</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/a_imperatriz-300.jpg" alt="A Imperatriz">
-                    <p>A Imperatriz</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/eu_nunca-300.png" alt="Eu nunca">
-                    <p>Eu nunca</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/heartstoper-300.jpg" alt="Heartstoper">
-                    <p>Heartstoper</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/monk-300.jpg" alt="Monk">
-                    <p>Monk</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/psych-300.jpg" alt="Psych">
-                    <p>Psych: agentes especiais</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/bridgertons-300.jpg" alt="Bridgertons">
-                    <p>Bridgertons</p>
-                </div>
-                </section>
-                
-                <a name="filmes"></a>
-                <h1>Filmes</h1>
-                <section class="catalogo">
-            <div class="item">
-                <img src="imagens/As-Branquelas-300.jpg" alt="as branquelas">
-                <p>As Branquelas</p>
-            </div>
-                </section>
-        </main>
+      </div>
+      
+      <div id="elementosDireira">
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="pesquise o filme..." />
+            <i class="bx bx-search"></i>
+          </div>
+          <ul>
+              <li id="conta">
+                  <img  src="image/chopper.webp" alt="Usuario" id="fotoP">
+                  
+                          <div id="usuario" >
+                              <div>
+                                  <img src="image/pikachu.png" alt="Usuario">
+                                  <a href="#">Luís Antônio </a>
+                              </div>
+                              <hr>
+                              <a href="login.html">Sair</a>
+                  
+                          </div>
+              </li>
+          </ul>
+                  
+              </div>
+      </menu>
+   
     
 </body>
 </html>
