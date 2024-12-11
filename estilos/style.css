@@ -15,7 +15,7 @@ a, img:hover{
     
 }
 #Iinicio{
-    background-image: url("../imagens/As-Branquelas-300.jpg");
+    background-image: url("../image/johnwick4_4_H.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -89,15 +89,19 @@ main{
     margin-top: 20px;
 }
 menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(to bottom, black, transparent);
+    padding: 20px;
+
     position: fixed;
     top: 0px;
-    transition: background-color 0.4s;
-    background-image: linear-gradient(to bottom, black, transparent);
     text-align: right;
-    width: 99vw;
+    width: 100vw;
     height: 53px;
     margin: 0px;
-    padding: 20x 10px;
     
     
 }
@@ -131,42 +135,10 @@ menu nav a:hover{
     color: rgb(163, 162, 162);
 }
 
-#pesquisa{
-   float: left;
-   display: flex;
-   background-color: transparent;
-   align-items: center;
-   margin-right: 20px;
-   margin-top: 2px;
-   padding: 0px;
-   outline: 2px solid white;
-   border-radius: 10px;
-   
-}
-#pesquisa button{
-    background-color: transparent;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border: 0px;
-    padding: 0px;
-     
-}
-#busca{
-    background-color: transparent;
-    color: white;
-    border: 0px;
-    padding: 0px;
-    margin-left: 10px;
-}
-input:focus{
-    outline: none;
-}
-
 #elementosDireira img{
 
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding: 5px;
     border-radius: 10px;
 
@@ -175,12 +147,22 @@ input:focus{
 #elementosDireira{
     display: flex;
     float: right;
-    height: 53px;
     margin-right: 2%;
 
 }
+#elementosDireira li{
+   display: block;
+}
+#elementosDireira ul{
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+
+}
+
 #conta {
   position: relative;
+
 
 }
 #conta:hover #usuario{
@@ -192,39 +174,27 @@ input:focus{
     text-align: left;
     width: 180px;
     height: 0px;
-   overflow: hidden;
+    overflow: hidden;
     
     left: -100%;
     transform: translateX(-50%);
+    border-radius: 7px;
 }
- #elementosDireira li{
-    display: block;
-}
-#elementosDireira ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
 
-}
-#usuario img{
-    
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    
-}
 #usuario div{
     display: flex;
     align-items: center;
+    padding: 5px;
     
 }
 #usuario a{
-   padding: 5px 3px;
+   padding: 5px;
+   margin-left: 5px;
 }
 
 
 hr{
-
+    padding: 0px;
     margin: 5px;
 }
 h1, h2{

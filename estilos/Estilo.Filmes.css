@@ -1,0 +1,204 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .logo span {
+    color: #3a57ff;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #333;
+    padding: 8px 15px;
+    border-radius: 25px;
+  }
+  
+  #search-input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+  #search-input:focus{
+    outline: none;
+  }
+  
+  .bx {
+    color: #3a57ff;
+    font-size: 1.2rem;
+  }
+  
+  .profile-link {
+    margin-left: 20px;
+  }
+  
+  .profile-img { /*barra de pesquisa*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .main-nav a:hover {
+    color: #3a57ff;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    height: 80vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+  
+  .hero-content {
+    z-index: 10;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .release-date {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #3a57ff;
+  }
+  
+  
+  /* Popular Section */
+  .popular-section {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #3a57ff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-item {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+  
+  .movie-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .movie-item h3{
+    color: #3a57ff;
+  }
+
+  
+  .movie-title {
+    text-align: center;
+    margin-top: 10px; /* Para dar um pequeno espaço entre a imagem e o título */
+  
+  }
+ 
+  
+  .movie-title {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  /* Movies Section */
+  .movies-section {
+    padding: 40px 20px;
+    background-color: #121212;
+  }
+  
+  .movies-section .movie-item {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #bbb;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
