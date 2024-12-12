@@ -16,6 +16,7 @@ a, img:hover{
 }
 #Iinicio{
     background-image: url("../image/johnwick4_4_H.jpg");
+    background-image: url("../image/johnwick4_4_H.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -97,9 +98,17 @@ menu{
     background-image: linear-gradient(to bottom, black, transparent);
     padding: 20px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(to bottom, black, transparent);
+    padding: 20px;
+
     position: fixed;
     top: 0px;
     text-align: right;
+    width: 100vw;
     width: 100vw;
     height: 53px;
     margin: 0px;
@@ -140,6 +149,8 @@ menu nav a:hover{
 
     width: 45px;
     height: 45px;
+    width: 45px;
+    height: 45px;
     padding: 5px;
     border-radius: 10px;
 
@@ -161,8 +172,19 @@ menu nav a:hover{
 
 }
 
+#elementosDireira li{
+   display: block;
+}
+#elementosDireira ul{
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+
+}
+
 #conta {
   position: relative;
+
 
 
 }
@@ -176,9 +198,13 @@ menu nav a:hover{
     width: 180px;
     height: 0px;
     overflow: hidden;
+    overflow: hidden;
     
     left: -100%;
     transform: translateX(-50%);
+    border-radius: 7px;
+}
+
     border-radius: 7px;
 }
 
@@ -186,15 +212,19 @@ menu nav a:hover{
     display: flex;
     align-items: center;
     padding: 5px;
+    padding: 5px;
     
 }
 #usuario a{
+   padding: 5px;
+   margin-left: 5px;
    padding: 5px;
    margin-left: 5px;
 }
 
 
 hr{
+    padding: 0px;
     padding: 0px;
     margin: 5px;
 }
