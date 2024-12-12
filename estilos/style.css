@@ -15,6 +15,7 @@ a, img:hover{
     
 }
 #Iinicio{
+    /*adiciona uma imagem de fundo*/
     background-image: url("../image/johnwick4_4_H.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,12 +63,13 @@ a, img:hover{
     margin-right: 10px;
     
 }
-#play img{
-    width: 25px;
+
+#play:hover{
+background-color: rgba(255, 255, 255, 0.712);
 }
 
 #info{
-    background-color: rgba(96, 95, 95, 0.949);
+    background-color: rgb(96, 95, 95);
     color: white;
     text-decoration: none;
     text-align: center;
@@ -80,7 +82,7 @@ a, img:hover{
     margin-top: 10px;  
 }
 #info:hover{
-    background-color: rgba(96, 95, 95, 0.716);
+    background-color: rgba(96, 95, 95, 0.567);
     transition-duration: 0.2s;
 }
 
@@ -96,9 +98,17 @@ menu{
     background-image: linear-gradient(to bottom, black, transparent);
     padding: 20px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(to bottom, black, transparent);
+    padding: 20px;
+
     position: fixed;
     top: 0px;
     text-align: right;
+    width: 100vw;
     width: 100vw;
     height: 53px;
     margin: 0px;
@@ -135,8 +145,11 @@ menu nav a:hover{
     color: rgb(163, 162, 162);
 }
 
+/*estilo das imagens que estão dentro do "elementosDireita"*/
 #elementosDireira img{
 
+    width: 45px;
+    height: 45px;
     width: 45px;
     height: 45px;
     padding: 5px;
@@ -147,9 +160,19 @@ menu nav a:hover{
 #elementosDireira{
     display: flex;
     float: right;
-    margin-right: 2%;
+    margin-right: 1.5%;
 
 }
+#elementosDireira li{
+   display: block;
+}
+#elementosDireira ul{
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+
+}
+
 #elementosDireira li{
    display: block;
 }
@@ -164,7 +187,9 @@ menu nav a:hover{
   position: relative;
 
 
+
 }
+/*ao passar o mause por cima da div "conta" a div "usuario" terá a altura informada*/
 #conta:hover #usuario{
     height: 90px;
 }
@@ -174,20 +199,26 @@ menu nav a:hover{
     text-align: left;
     width: 180px;
     height: 0px;
+    /*oculta os elementos vazados da caixa*/
     overflow: hidden;
+    
     
     left: -100%;
     transform: translateX(-50%);
     border-radius: 7px;
 }
 
+
 #usuario div{
     display: flex;
     align-items: center;
     padding: 5px;
+    padding: 5px;
     
 }
 #usuario a{
+   padding: 5px;
+   margin-left: 5px;
    padding: 5px;
    margin-left: 5px;
 }
@@ -195,32 +226,10 @@ menu nav a:hover{
 
 hr{
     padding: 0px;
+    padding: 0px;
     margin: 5px;
 }
 h1, h2{
     color: white;
 }
 
-.catalogo{
-    display: flex;
-    overflow-x: auto;
-    background-color: transparent;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    padding: 10px 0px;
-    margin-bottom: 20px;
-    
-}
-
-.catalogo::-webkit-scrollbar{
-    width: 10px;
-}
-.catalogo::-webkit-scrollbar-thumb{
-    background-color: rgb(151, 88, 251);
-    border-radius: 10px;
-}
-
-.item{
-    margin-right: 15px;
-}

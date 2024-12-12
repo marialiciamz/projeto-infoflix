@@ -34,6 +34,7 @@ input{
 
 }
 input:focus{
+    /*retira os estilos padrões do outline do input*/
     outline:none ;
 }
 #iEntrar{
