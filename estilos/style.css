@@ -15,7 +15,7 @@ a, img:hover{
     
 }
 #Iinicio{
-    background-image: url("../image/johnwick4_4_H.jpg");
+    /*adiciona uma imagem de fundo*/
     background-image: url("../image/johnwick4_4_H.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,6 +145,7 @@ menu nav a:hover{
     color: rgb(163, 162, 162);
 }
 
+/*estilo das imagens que estão dentro do "elementosDireita"*/
 #elementosDireira img{
 
     width: 45px;
@@ -188,6 +189,7 @@ menu nav a:hover{
 
 
 }
+/*ao passar o mause por cima da div "conta" a div "usuario" terá a altura informada*/
 #conta:hover #usuario{
     height: 90px;
 }
@@ -197,16 +199,15 @@ menu nav a:hover{
     text-align: left;
     width: 180px;
     height: 0px;
+    /*oculta os elementos vazados da caixa*/
     overflow: hidden;
-    overflow: hidden;
+    
     
     left: -100%;
     transform: translateX(-50%);
     border-radius: 7px;
 }
 
-    border-radius: 7px;
-}
 
 #usuario div{
     display: flex;
