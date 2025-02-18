@@ -15,7 +15,7 @@ body{
 
     transform: translate(-50%,-50%);
 }
-#itens{
+.item{
     display: flex;
     flex-direction: row;
 }
@@ -25,11 +25,41 @@ h1{
 }
 img {
     border-radius: 20px;
-    width: 250px;
-    height: 250px;
+   
     margin: 10px;
 }
 img:hover{
     outline: 2px solid white;
 }
+.img-user {
+    width: 200px; /* Defina o tamanho da imagem */
+    height: 200px; /* Defina a altura para manter as imagens proporcionais */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorções */
+}
+.user-name {
+    text-align: center;
+    margin-top: 10px; /* Espaço entre a imagem e o nome */
+}
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* Ajustes para telas grandes */
+@media (min-width: 768px) {
+    img {
+        max-width: 220px; /* Ajusta o tamanho da imagem em telas médias */
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 576px) {
+    img {
+        max-width: 150px; /* Ajusta o tamanho da imagem em telas pequenas */
+    }
+    h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título */
+    }
+}
