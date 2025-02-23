@@ -16,12 +16,11 @@ a, img:hover{
 }
 #Iinicio{
     /*adiciona uma imagem de fundo*/
-    background-image: url("../image/johnwick4_4_H.jpg");
+    /* background-image: url("../image/johnwick4_4_H.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 100%;
-    box-shadow: inset 13px -15px 20px  rgb(0, 0, 0);
+    box-shadow: inset 13px -15px 20px  rgb(0, 0, 0);*/
    
 }
 #Iinicio aside{
@@ -35,17 +34,17 @@ a, img:hover{
 
     top: 50%;
 }
-#Iinicio div{
-    
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
 #Iinicio h1{
     
     font-size: 5vw;
     color: white;
 }
 
+.carousel-inner img{
+    width: 100vw;
+    height: 100%;
+    box-shadow: inset 13px -15px 20px  rgb(0, 0, 0); 
+}
 
 #play{
     background-color: white;
@@ -55,9 +54,7 @@ a, img:hover{
     text-align: center;
     text-shadow: none;
     font-weight: bold;
-    width: 9vw;
-    max-width: 100px;
-    min-width: 90px;
+    max-width: 9vw;
     border-radius: 4px;
     padding: 10px 13px;
     margin-right: 10px;
@@ -75,8 +72,7 @@ background-color: rgba(255, 255, 255, 0.712);
     text-align: center;
     text-shadow: none;
     font-weight: bold;
-    width: 9vw;
-    min-width: 150px;
+    max-width: 9vw;
     border-radius: 4px;
     padding: 10px 13px;
     margin-top: 10px;  
@@ -108,7 +104,6 @@ menu{
     position: fixed;
     top: 0px;
     text-align: right;
-    width: 100vw;
     width: 100vw;
     height: 53px;
     margin: 0px;
@@ -160,19 +155,9 @@ menu nav a:hover{
 #elementosDireira{
     display: flex;
     float: right;
-    margin-right: 1.5%;
+    margin-right: 0.9%;
 
 }
-#elementosDireira li{
-   display: block;
-}
-#elementosDireira ul{
-   list-style: none;
-   margin: 0px;
-   padding: 0px;
-
-}
-
 #elementosDireira li{
    display: block;
 }
@@ -232,4 +217,15 @@ hr{
 h1, h2{
     color: white;
 }
+@media screen and (min-width: 968px) {
+    .carousel-inner img{
+        height: 100vh;
+    }
 
+}
+@media screen and (max-width: 481px){
+    aside{
+        width: 10px;
+    }
+    
+}
