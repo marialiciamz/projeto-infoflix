@@ -54,9 +54,10 @@ input:focus{
     margin-top: 10px;
     margin-bottom: 3px;
 }
-@media screen and (max-width: 523px) {
+@media screen and (max-width: 523px) and (max-height: 519px) {
     section{
         width: 245px;
+        height: 270px;
     }
     input{
         width: 200px;
