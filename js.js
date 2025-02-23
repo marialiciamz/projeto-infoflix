@@ -18,6 +18,9 @@ function loginSite(){
     }
  }
 
+
+
+
 // adiciona um evento para mudar a cor de fundo do menu de acordo com a rolagem do scrull
 window.addEventListener('scroll', function(){
     var elementoComMudanca = this.document.querySelector('menu');

@@ -267,16 +267,22 @@ h1, h2{
         width: 30px;
         height: 30px;
     }
-    #navegacao{
-        display: none;
+  
     }
+    @media screen and (max-width: 730px){
+        #navegacao{
+            display: none;
+        }  
     }
-    
+    @media screen and (min-width: 730px){
+        .dropdown{
+            display: none;
+        }
+
+    }
     @media screen and (min-width: 578px) {
         .play, .info{
             font-size: 18px;
         }
-        .dropdown{
-            display: none;
-        }
+        
 }
