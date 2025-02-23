@@ -27,7 +27,7 @@ a, img:hover{
     position: absolute;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.853);
-    min-width: 360px;
+    min-width: 300px;
     text-align: justify;
     padding: 15px;
     margin-left: 4vw;
@@ -36,7 +36,7 @@ a, img:hover{
 }
 #Iinicio h1{
     
-    font-size: 5vw;
+    font-size: 7vw;
     color: white;
 }
 
@@ -54,7 +54,7 @@ a, img:hover{
     text-align: center;
     text-shadow: none;
     font-weight: bold;
-    max-width: 9vw;
+    font-size: 3vw;
     border-radius: 4px;
     padding: 10px 13px;
     margin-right: 10px;
@@ -73,6 +73,7 @@ background-color: rgba(255, 255, 255, 0.712);
     text-shadow: none;
     font-weight: bold;
     max-width: 9vw;
+    font-size: 3vw;
     border-radius: 4px;
     padding: 10px 13px;
     margin-top: 10px;  
@@ -120,7 +121,7 @@ menu{
 nav{
     float: left;
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 5px;
     font-weight: bold;
     font-size: 19px;
 }
@@ -141,7 +142,7 @@ menu nav a:hover{
 }
 
 /*estilo das imagens que estão dentro do "elementosDireita"*/
-#elementosDireira img{
+.elementosDireira img{
 
     width: 45px;
     height: 45px;
@@ -152,22 +153,24 @@ menu nav a:hover{
 
 }
 
-#elementosDireira{
+.elementosDireira{
     display: flex;
     float: right;
     margin-right: 0.9%;
 
 }
-#elementosDireira li{
+.elementosDireira li{
    display: block;
 }
-#elementosDireira ul{
+.elementosDireira ul{
    list-style: none;
    margin: 0px;
    padding: 0px;
 
 }
-
+.elementosEsquerda{
+    display: flex;
+}
 #conta {
   position: relative;
 
@@ -224,8 +227,21 @@ h1, h2{
 
 }
 @media screen and (max-width: 481px){
-    aside{
-        width: 10px;
+    #play, #info, aside {
+        font-size: 3vw;
+        width: 3vw;
+    }
+    .logo-container h1{
+      font-size: 1.2rem;  
+    }
+    .logo-container img{
+        width: 30px;
+        height: 30px;
+    }
     }
     
+    @media screen and (min-width: 586px) {
+        #play, #info{
+            font-size: 19px;
+        }
 }
