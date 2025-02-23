@@ -47,18 +47,21 @@
   .search-box {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 5px;
     background-color: #333;
     padding: 5px 12px;
     border-radius: 25px;
   }
-  
+  .linhaUm .search-box:active #busca {
+    background-color: aqua;
+  }
   #search-input {
     border: none;
     background: transparent;
     color: #fff;
     font-size: 0.9rem;
     padding: 5px 10px;
+    width: 100vw;
   }
   #search-input:focus{
     outline: none;
@@ -78,7 +81,10 @@
     height: 40px;
     border-radius: 50%;
   }
-  
+  #buscar{
+    display: flex;
+    flex-flow: row wrap;
+  }
   .main-nav ul {
     display: flex;
     gap: 20px;
@@ -208,8 +214,4 @@
   footer p {
     font-size: 1rem;
   }
-  @media screen and (max-width: 730px){
-    #search-input{
-      
-    }
-  }
+  

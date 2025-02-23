@@ -99,20 +99,39 @@ main{
 }
 menu{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s;
     background-image: linear-gradient(to bottom, black, transparent);
-    padding: 10px;
+    padding: 3px 10px 0px 10px;
 
     position: fixed;
     top: 0px;
     text-align: right;
     width: 100vw;
-    height: 53px;
+    /*height: 53px;*/
     margin: 0px;
     
     
+}
+#linhaUm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+#linhaDois{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: 0px;
+}
+#busca{
+    width: 100vw;
+    border-radius: 0px;
+    margin: 0px;
 }
 .corPadrao{
     background-image: linear-gradient(to bottom, black, transparent);
@@ -159,7 +178,6 @@ menu nav a:hover{
 .elementosDireira{
     display: flex;
     float: right;
-    margin-right: 0.2%;
 
 }
 .elementosDireira li{
@@ -197,10 +215,11 @@ menu nav a:hover{
 
 .elementosEsquerda{
     display: flex;
+    margin-left: 10px;
 }
 #conta {
   position: relative;
-
+   margin-right: 20px;
 }
 /*ao passar o mause por cima da div "conta" a div "usuario" terá a altura informada*/
 #conta:hover #usuario{
