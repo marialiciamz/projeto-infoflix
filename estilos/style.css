@@ -302,7 +302,18 @@ h1, h2{
         transition: 0.2s;
     }
 }
+@media screen and (max-width: 730px){
+    #navegacao{
+        display: none;
+    }  
+}
+@media screen and (min-width: 730px){
+    .dropdown{
+        display: none;
+    }
+   
 
+}
 @media screen and (max-width: 648px){
     #Iinicio aside{ 
         text-align: center;
@@ -337,18 +348,7 @@ h1, h2{
     }
   
     }
-    @media screen and (max-width: 730px){
-        #navegacao{
-            display: none;
-        }  
-    }
-    @media screen and (min-width: 730px){
-        .dropdown{
-            display: none;
-        }
-       
 
-    }
     @media screen and (min-width: 578px) {
         .play, .info{
             font-size: 18px;
