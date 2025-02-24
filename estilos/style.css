@@ -268,16 +268,65 @@ hr{
 h1, h2{
     color: white;
 }
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 750px) {
     .carousel-inner img{
         height: 100vh;
     }
-
+    
 }
-@media screen and (max-width: 578px){
+@media screen and (max-width: 750px){
+    #iinicio{
+        position: relative;
+    }
+    #carouselExampleSlidesOnly{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+        
+    }
+    .carousel-inner{
+        border-radius: 20px;
+        width:  80vw;
+        max-height: 88vh;
+        border: 1px solid rgb(94, 93, 93);
+        box-shadow: 0px 0px 14px black;
+    }
+        #Iinicio aside{ 
+        text-align: center;
+        margin: 0px;
+        width: 60vw;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.2s;
+    }
+}
+
+@media screen and (max-width: 648px){
+    #Iinicio aside{ 
+        text-align: center;
+        margin: 0px;
+        width: 60vw;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width: 558px){
     .play, .info, aside {
         font-size: 3vw;
     
+    }
+    #Iinicio aside{ 
+        text-align: center;
+        margin: 0px;
+        width: 80vw;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
     }
     .logo-container h1{
       font-size: 1.4rem;  
@@ -297,6 +346,7 @@ h1, h2{
         .dropdown{
             display: none;
         }
+       
 
     }
     @media screen and (min-width: 578px) {
@@ -304,4 +354,9 @@ h1, h2{
             font-size: 18px;
         }
         
+}
+@media screen and (max-width: 354px){
+    .play, .info{
+        width: 30vw;
+    }
 }
