@@ -11,13 +11,13 @@ function mudarCor2(){
 function loginSite(){
     if(iSenha.value == "Info_2022" && INome.value == "informaticaporamor@gmail.com"){
      return true;
+    
     }else{
         alerta.style.display ="block";
         document.getElementById("form").reset();
         return false;
     }
  }
-
 
 
 

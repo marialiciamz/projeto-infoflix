@@ -33,20 +33,24 @@ input{
     border: 0px;
 
 }
+#iEntrar:active{
+    background-color: #300098;
+}
 input:focus{
     /*retira os estilos padrões do outline do input*/
     outline:none ;
 }
 #iEntrar{
+    display: block;
+    text-align: center;
     background-color: #4C00F5;
     color: white;
-    width: 420px;
-    height: 50px;
+    text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px;
-    padding-block: 0px;
+    border-radius: 10px;
 }
 #alerta{
     display: none;
@@ -62,8 +66,6 @@ input:focus{
     input{
         width: 200px;
     }
-    #iEntrar{
-        width: 220px;
-    }
+    
     
 }

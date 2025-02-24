@@ -23,7 +23,7 @@
     <h1 class="logo">INFO<span>FLIX</span></h1>
         <section>
             <h1>Entrar</h1>
-            <form action="index.html" method="post"  autocomplete="on" onsubmit=" return loginSite()" id="form">
+            <form method="post"  autocomplete="on"  id="form">
                 <div>
                     <input type="email" id="iNome" name="nome" placeholder="Email" maxlength="30" autocomplete="email" onfocus="mudarCor2()" required></div>
 
@@ -33,13 +33,15 @@
                     <p id="alerta">senha ou email incorreto</p>
                 </div>
 
+                
                 <div>
-                    <input type="submit" value="Entrar" id="iEntrar" onclick="mudarCor1()">
+                    <a href="index.html"  onclick=" return loginSite()" id="iEntrar" onclick="mudarCor1()">Entrar
+                    </a>
                 </div>
-
+                
             </form>
     
         </section>
-
+        
 </body>
 </html>
